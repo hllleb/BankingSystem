@@ -10,7 +10,7 @@ public class Account
     
     public Account(string ownerName, decimal balance)
     {
-        this.AccountNumber = ++accountsCount;
+        this.AccountNumber = 100000000 + ++accountsCount;
         this.OwnerName = ownerName;
         this.Balance = balance;
         this.transactionsHistory = new List<Transaction>();
